@@ -47,16 +47,16 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-.line-clamp{
+.line-clamp {
   display: -webkit-box;
-  -webkit-line-clamp : var(--line-clamp.1) ;
+  -webkit-line-clamp: var(--line-clamp.1);
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.line-clamp.line-2{
+.line-clamp.line-2 {
   --line-clamp: 2;
 }
-.break-all{
+.break-all {
   word-break: break-all;
 }
 /* -------------------header------------------------------- */
@@ -374,27 +374,27 @@ a {
   background: var(--primary-color);
 }
 /* =====feedback ====================*/
-.feedback{
+.feedback {
   margin-top: 135px;
   padding: 96px 0;
-  background:#2e2100;
+  background: #2e2100;
 }
-.feedback-list{
+.feedback-list {
   display: flex;
   overflow: hidden;
 }
-.feedback-item{
+.feedback-item {
   display: flex;
   flex-shrink: 0;
-  width: 100%
+  width: 100%;
 }
-.feedback-item .avatar{
+.feedback-item .avatar {
   width: 72px;
   height: 72px;
   border-radius: 50%;
   object-fit: cover;
 }
-.feedback-item .menber-name{
+.feedback-item .menber-name {
   margin-top: 18px;
   color: #f7f7f7;
   font-family: var(--font-heading);
@@ -402,33 +402,75 @@ a {
   font-weight: 700;
   line-height: 1.42;
 }
-.feedback-item .info .desc{
+.feedback-item .info .desc {
   margin-top: 4px;
   color: #bfbcb2;
   font-size: 1.4rem;
   line-height: 1.86;
 }
-.feedback-item .dots{
+.feedback-item .dots {
   gap: 6px;
   display: flex;
   margin-top: 28px;
 }
-.feedback-item .dot{
+.feedback-item .dot {
   height: 6px;
   width: 6px;
   border-radius: 50%;
   background: #634700;
 }
-.feedback-item .dot.active{
+.feedback-item .dot.active {
   background: var(--primary-color);
 }
-.feedback-item .content{
+.feedback-item .content {
   width: 66%;
   margin-left: auto;
 }
-.feedback-item blockquote{
+.feedback-item blockquote {
   color: #fff;
   font-size: 2.6rem;
   font-style: italic;
   line-height: 1.54;
+}
+/* ===features===== */
+.features {
+  margin-top: 135px;
+  padding: 65px 0;
+}
+.features .body {
+  display: flex;
+  /* khoi left kick sang left right kick right */
+  justify-content: space-between;
+}
+.features .images {
+  display: flex;
+  gap: 30px;
+}
+.features .images img {
+  width: 270px;
+  height: 405px;
+  /* anh do meo */
+  object-fit: cover;
+  border-radius: 16px;
+}
+.features .lower {
+  margin-top: 34px;
+}
+.features .content {
+  width: 41%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.features .desc {
+  margin-top: 16px;
+  color: #5f5b53;
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+.features .cta-btn {
+  margin-top: 32px;
+  width: 137px;
+  height: 50px;
+  background: var(--primary-color);
 }
